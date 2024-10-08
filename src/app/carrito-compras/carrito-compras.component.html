@@ -1,0 +1,12 @@
+<div *ngIf="productosCarrito.length === 0">
+    <p>El carrito está vacío</p>
+  </div>
+  
+  <div *ngIf="productosCarrito.length > 0">
+    <div *ngFor="let producto of productosCarrito">
+      <p>{{ producto.nombre }} - {{ producto.precio }}$</p>
+      <button (click)="eliminarProducto(producto.id)">Eliminar</button>
+    </div>
+    <p>Total: {{ total }}$</p> <!-- Usa la propiedad total -->
+  </div>
+  

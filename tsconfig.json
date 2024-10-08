@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext", // O "commonjs", dependiendo de tu entorno
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "lib": ["es2015", "dom"],
+    "experimentalDecorators": true
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
